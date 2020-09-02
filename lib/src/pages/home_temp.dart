@@ -27,11 +27,11 @@ class HomePageTemp extends StatelessWidget {
     return lista;
   }
 
-  List<Widget> _crearItemsCorta() {
-    return opciones.map((e) {
-      ListTile(
-        title: Text(e + '!'),
-      );
-    }).toList();
-  }
+  // List<Widget> _crearItemsCorta() {
+  //   return opciones.map((e) {
+  //     ListTile(
+  //       title: Text(e + '!'),
+  //     );
+  //   }).toList();
+  // }
 }

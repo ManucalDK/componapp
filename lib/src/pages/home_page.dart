@@ -1,4 +1,3 @@
-import 'package:componapp/src/pages/alert_page.dart';
 import 'package:componapp/src/providers/menu_povider.dart';
 import 'package:componapp/src/utils/icon_string_util.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +7,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Componentes'),
+        title: Text('Practica - Componentes'),
       ),
       body: _lista(),
     );

@@ -16,7 +16,82 @@ class CardPage extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          _cardTipo2()
+          _cardTipo2(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo1(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo2(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo1(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo2(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo1(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo2(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo1(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo2(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo1(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo2(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo1(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo2(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo1(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo2(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo1(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo2(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo1(),
+          SizedBox(
+            height: 20,
+          ),
+          _cardTipo2(),
+          SizedBox(
+            height: 20,
+          ),
         ],
       ),
     );
@@ -24,6 +99,8 @@ class CardPage extends StatelessWidget {
 
   Widget _cardTipo1() {
     return Card(
+      elevation: 5,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       child: Column(
         children: [
           ListTile(
@@ -56,7 +133,8 @@ class CardPage extends StatelessWidget {
   }
 
   Widget _cardTipo2() {
-    return Card(
+    final card = Card(
+      clipBehavior: Clip.antiAlias,
       child: Column(
         children: [
           FadeInImage(
@@ -74,6 +152,12 @@ class CardPage extends StatelessWidget {
           // ),
           Container(padding: EdgeInsets.all(10), child: Text('No se que poner'))
         ],
+      ),
+    );
+    return Container(
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(15)),
+      child: ClipRRect(
+        child: card,
       ),
     );
   }
